@@ -32,13 +32,7 @@ const UserAuthentication = () => {
   const connectMetaMask = async () => {
     if (window.ethereum) {
       console.log("Connected to metamask");
-      const chainId = await window.ethereum.request({ method: "eth_chainId" });
-      const ganacheChainId = "0x539";
-      if (chainId !== ganacheChainId) {
-        return;
-      } else {
-        console.log("Connected to ganache");
-      }
+     
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
       });

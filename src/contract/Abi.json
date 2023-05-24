@@ -1,0 +1,392 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_status",
+				"type": "bool"
+			}
+		],
+		"name": "approveUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_email",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_loc",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_orgName",
+				"type": "string"
+			}
+		],
+		"name": "registerUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_approval",
+				"type": "bool"
+			}
+		],
+		"name": "setCoOrdinatorApproval",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_approval",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "_comment",
+				"type": "string"
+			}
+		],
+		"name": "setGovernmentApproval",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_inspection",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "setInspection",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_hash",
+				"type": "string"
+			}
+		],
+		"name": "storeApplication",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_addressOne",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_addressTwo",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "applicationInfo",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "applicationID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "hashValue",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "GovernmentApproved",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "CoOrdinatorApproved",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "Inspection",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "Progress",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "Comment",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "appUsers",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "userID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "orgName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "email",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "loc",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "wallet",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "status",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isOperated",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getApplicationInfo",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "applicationID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "hashValue",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "GovernmentApproved",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "CoOrdinatorApproved",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "Inspection",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "Progress",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "Comment",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					}
+				],
+				"internalType": "struct KSAProject.Application[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getUsers",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "userID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "orgName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "loc",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "isOperated",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct KSAProject.user[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "owners",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_hashedMessage",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_v",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_r",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_s",
+				"type": "bytes32"
+			}
+		],
+		"name": "VerifyMessage",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	}
+]
